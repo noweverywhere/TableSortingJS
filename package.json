@@ -1,0 +1,37 @@
+{
+  "name": "TableSortingJS",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "pretest": "npm install",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
+
+    "prestart": "npm install",
+    "start": "node node_modules/http-server/bin/http-server",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor test/protractor-conf.js",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noweverywhere/TableSortingJS.git"
+  },
+  "author": "Marinus Swanepoel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noweverywhere/TableSortingJS/issues"
+  },
+  "homepage": "https://github.com/noweverywhere/TableSortingJS",
+  "devDependencies": {
+    "karma": "^0.10.2",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "protractor": "~1.0.0",
+    "http-server": "^0.6.1"
+  }
+}

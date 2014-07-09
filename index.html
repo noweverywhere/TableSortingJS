@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Table Sorting</title>
+    </head>
+    <body>
+        <table data-src="http://rocky-falls-8361.herokuapp.com/"></table>
+    </body>
+
+    <script type="application/javascript" src="index.js" ></script>
+    <script type="application/javascript" >
+
+        if (typeof document.onreadystatechange !== 'undefined') {
+            document.onreadystatechange = function () {
+                if (document.readyState === 'interactive') {
+                    var tables = document.getElementsByTagName('table');
+
+                    for (var i =0; i < tables.length; i += 1) {
+
+                        if (tables[i].dataset && tables[i].dataset.src) {
+                            new ConsumerTable(tables[i]);
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        th {
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+
+        .reverse {
+            background: #FDF;
+        }
+    </style>
+</html>
