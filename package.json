@@ -1,7 +1,7 @@
 {
   "name": "TableSortingJS",
   "version": "0.0.0",
-  "description": "",
+  "description": "JavaScript project to demonstrate creation of a table and sorting the rows by clicking on the column names",
   "main": "index.js",
   "scripts": {
 
